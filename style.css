@@ -1,0 +1,306 @@
+body {
+    background-color: rgb(231, 237, 240); 
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+}
+
+.main-page {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.column-one{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    background-image: url(./images/hiker1.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    float: left;
+    animation: fadein 2s ease-in-out;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.the-content {
+    margin: 3vw;
+}
+
+.content-light{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-weight: 300;
+    width: 100%
+}
+
+.content-title{
+    font-weight: 400;
+    
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-stretch: ultra-expanded;
+}
+.column-one-bottom{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+    top: 40vh;
+}
+
+
+
+.column-two{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.the-list {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.lists {
+    text-decoration: none;
+    list-style: none;
+}
+
+.lists:hover{
+    font-size: large;
+    cursor: pointer;
+}
+
+.column-two-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5vw;
+}
+
+.header-text {
+    animation: textfadein 2s ease-in-out
+}
+
+@keyframes textfadein{
+    from {
+        opacity: 0;
+        margin-left: -30px;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+
+.title-price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.money {
+    color: rgb(245, 95, 26);
+}
+
+
+
+.paragraph {
+    width: 100%;
+}
+
+.more-and-buttons {
+    margin-top: 25px;
+    display : flex;
+    justify-content: space-between;
+}
+
+.main-button {
+    display: flex;
+    flex-grow: 2;
+}
+
+.the-main-button {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 9vw;
+    border-radius: 30px;
+    border-color: rgb(245, 95, 26);
+    box-shadow: none;
+    border-width: 1px;
+}
+
+.the-main-button:hover {
+    background-color: rgb(245, 95, 26);
+}
+
+.button-one {
+    display: flex;
+    flex-grow: 1;
+}
+
+.the-button-one {
+    border : none;
+    font-size: 18px;
+}
+
+.the-button-one:hover {
+    border: none;
+    background-color: rgb(245, 95, 26);
+    border-radius: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.button-two {
+    display: flex;
+    flex-grow: 1;
+}
+
+.the-button-two {
+    border-color: rgb(245, 95, 26);
+    border-width: 1px;
+    border-radius: 4px
+}
+
+.the-button-two:hover{
+    border: none;
+    background-color: rgb(245, 95, 26);
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    /* margin-right: -10vw; */
+    justify-content: space-around;
+    animation: cardsfadein 2s ease-in-out;
+}
+
+@keyframes cardsfadein{
+    from {
+        opacity: 0;
+        margin-left: 35px;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+
+
+@media (max-width: 800px){
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+
+    }
+}
+
+.card-one {
+    background-image: url(./images/success.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 240px;
+    height: 373.95px;
+    border-radius: 10px;
+    filter: drop-shadow(2px 15px 15px rgb(54, 53, 53));
+    margin-top : 10px;
+}
+
+.card-two {
+    background-image: url(./images/tree.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 240px;
+    height: 373.95px;
+    border-radius: 10px;
+    filter: drop-shadow(2px 15px 15px rgb(54, 53, 53));
+    margin-top : 10px;
+}
+
+.card-three {
+    background-image: url(./images/water.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 240px;
+    height: 373.95px;
+    border-radius: 10px;
+    filter: drop-shadow(2px 15px 15px rgb(54, 53, 53));
+    margin-top : 10px;
+}
+
+.card-four {
+    background-image: url(./images/lake.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 240px;
+    height: 373.95px;
+    border-radius: 10px;
+    filter: drop-shadow(2px 15px 15px rgb(54, 53, 53));
+    margin-top : 10px;
+}
+
+.top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.round-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.buttonless {
+    border-radius: none;
+    width: 4vw;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.247);
+    color: white;
+}
+
+.topic {
+    font-size: 22px;
+    font-weight: 900;
+    
+}
+
+.smaller-card-text {
+    font-weight: 400;
+    
+    
+}
+
+.them-content {
+    background-color: rgba(0, 0, 0, 0.247);
+    color: white;
+    margin: 10px;
+    position: relative;
+    top: 20vh;
+}
